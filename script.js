@@ -6,8 +6,8 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
                 {
-                    enunciado : "No âmbito social, você prefere:",
-                    alternativas: ["Alternaaativa 1", "Alternativa 2"]
+                    enunciado : "Você vê uma pessoa que possui deficiência com dificuldades para se alimentar. ",
+                    alternativas: [" Você ajuda ela a se alimentar, mas ela diz que você deveria virar deficiência para comer mesmo pois está muito gordo ", ". Você ri e segue sua vida, mas é atropelado em seguida e vira deficiente também."]
                 },
                 {
                     enunciado : "No âmbito ambiental, você prefere:",
@@ -19,3 +19,5 @@ const perguntas = [
                 },
 
 ]
+
+let atual = 0;
