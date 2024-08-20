@@ -48,26 +48,36 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal="";
 
 function mostraPerguntas() {
+    if(atual >= perguntas.length){
+        mostraResultado();
+        return;
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent ="";
     mostraAlternativas ();
 }
 
-function mostraAlternativas() {
+function mostraAlternativas(){
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click",function(){
-            atual++;
-            mostraPerguntas();
-        })
+        botaoAlternativa.addEventListener("click",()=> opcaoSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativa);
     }
 }
+function respostaSelecionada (opcaoSelecionada){
+  const afirmacoes = opcaoSelecionada.afirmacao;
+atual++;
+mostraPerguntas();
+}
 
-
-
+function mostraResultado(){
+    caixaPerguntas.textContent = "Em resumo, voce escolheu..."
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
 mostraPerguntas();
