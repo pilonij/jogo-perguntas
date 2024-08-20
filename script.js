@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Você ajuda ela a se alimentar, mas ela diz que você deveria virar deficiência para comer menos também ",
-                afirmacao: "afirmacao",
+                afirmacao: "voce fica frustado",
             },
             {
                 texto: ". Você ri e segue sua vida, mas é atropelado em seguida e vira deficiente também.",
-                afirmacao: "afirmacao",
+                afirmacao: "voce sente remorso",
             },]
     },
     {
@@ -22,11 +22,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: " Você garante seu emprego e não fala nada, é uma árvore da espécie da espécie Pinheiro entra em extinção. ",
-                afirmacao: "afirmacao,"
+                afirmacao: "voce fica com a consciencia pesada,"
             },
             {
                 texto: "Você denúncia as autoridades ambientais locais para que providências sejam tomadas, mas perde seu emprego.",
-                afirmacao: "afirmacao",
+                afirmacao: "voce fica sem dinhaeiro pro aluguel e vai morar na rua",
             },
         ]
     },
@@ -35,11 +35,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Voce faz o que a empresa pede,e destrói o trabalho dos outros, mas ganha um aumento.",
-                afirmacao: "afirmacao",
+                afirmacao: "o aumento nao foi nem de 5%",
             },
             {
                 texto: "Você desenvolve uma campanha de incentivo a dublagem viva, mas outra pessoa é contratada e você fica desempregado. ",
-                afirmacao: "afirmacao",
+                afirmacao: "voce fica sem dinheiro e precisa pedir esmola",
             },
         ]
     },
