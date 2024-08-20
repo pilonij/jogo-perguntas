@@ -69,7 +69,7 @@ function mostraAlternativas(){
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
-function respostaSelecionada (alternativa){
+function respostaSelecionada (alternativa) {
   const afirmacoes = opcaoSelecionada.afirmacao;
   historiaFinal += afirmacoes + "";
      atual++;
@@ -81,4 +81,5 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+
 mostraPerguntas();
